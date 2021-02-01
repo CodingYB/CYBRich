@@ -21,6 +21,10 @@
 {
     self.view.backgroundColor = color;
 }
+- (void)logMessage:(NSString *)message
+{
+    NSLog(@"%@--%@",self.class, message);
+}
 /*
 #pragma mark - Navigation
 

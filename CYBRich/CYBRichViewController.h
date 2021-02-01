@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CYBRichViewController : UIViewController
 - (void)setBgViewColor:(UIColor *)color;
+- (void)logMessage:(NSString *)message;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CYBRich"
-  spec.version      = "1.0.8"
+  spec.version      = "1.0.9"
   spec.summary      = "Run fast, be rich."
 
   # This description is used to generate tags and improve search results.
@@ -106,7 +106,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-    #spec.resources = "Resources/*"
+    spec.resources = ['Resources/*.{xcassets,json,imageset,png']
     spec.resource_bundles = {'CYBRich' =>['Resources/*.{storyboard,xib,xcassets,json,imageset,png}']}
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"

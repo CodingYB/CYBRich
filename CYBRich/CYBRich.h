@@ -8,5 +8,5 @@
 #ifndef CYBRich_h
 #define CYBRich_h
 #import "CYBRichViewController.h"
-
+#import "NSBundle+CYBRich.h"
 #endif /* CYBRich_h */

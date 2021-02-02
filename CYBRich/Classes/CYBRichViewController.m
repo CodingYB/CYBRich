@@ -6,8 +6,6 @@
 //
 
 #import "CYBRichViewController.h"
-#import "NSBundle+CYBRich.h"
-#import "UIImage+Rich.h"
 @interface CYBRichViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *topImgV;
 @property (weak, nonatomic) IBOutlet UIImageView *centerImgV;

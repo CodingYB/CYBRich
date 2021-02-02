@@ -20,17 +20,29 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQd-sw-fa4">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pQd-sw-fa4">
                     <rect key="frame" x="87" y="151" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="CWZ-pb-916"/>
+                        <constraint firstAttribute="width" constant="240" id="c1h-cm-AWz"/>
+                    </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ULp-BP-Yrl">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ULp-BP-Yrl">
                     <rect key="frame" x="87" y="367" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="c2M-Fu-fE2"/>
+                        <constraint firstAttribute="height" constant="128" id="kp7-Gx-tso"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="ULp-BP-Yrl" firstAttribute="top" secondItem="pQd-sw-fa4" secondAttribute="bottom" constant="88" id="85p-7S-7fE"/>
+                <constraint firstItem="pQd-sw-fa4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MpV-AE-sDU"/>
+                <constraint firstItem="pQd-sw-fa4" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="107" id="vT5-zB-Mph"/>
+                <constraint firstItem="ULp-BP-Yrl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yHG-XU-gJW"/>
+            </constraints>
             <point key="canvasLocation" x="-233" y="94"/>
         </view>
     </objects>

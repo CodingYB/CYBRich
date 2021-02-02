@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CYBRich"
-  spec.version      = "1.0.9"
+  spec.version      = "1.1.0"
   spec.summary      = "Run fast, be rich."
 
   # This description is used to generate tags and improve search results.
@@ -91,10 +91,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "CYBRich/*"
+  spec.source_files  = "CYBRich/Classes/*"
   #spec.exclude_files = "Classes/Exclude"
 
-   spec.public_header_files = "CYBRich/*.h"
+   spec.public_header_files = "CYBRich/Classes/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -106,8 +106,8 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-    spec.resources = ['Resources/*.{xcassets,json,imageset,png']
-    spec.resource_bundles = {'CYBRich' =>['Resources/*.{storyboard,xib,xcassets,json,imageset,png}']}
+    #spec.resources = ['Resources/*.{xcassets,json,imageset,png']
+    spec.resource_bundles = {'CYBRich' =>['CYBRich/Resources/*']}
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -124,7 +124,7 @@ Pod::Spec.new do |spec|
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
-
+ spec.prefix_header_contents  = '#import "CYBRich.h"'
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If your library depends on compiler flags you can set them in the xcconfig hash

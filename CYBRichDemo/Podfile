@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+install! 'cocoapods',
+  disable_input_output_paths: true,
+  generate_multiple_pod_projects: true
+target 'CYBRichTest' do
+   pod 'CYBRich','~> 1.0.8'
+#  pod 'CYBRich', :path => '/Users/sunsea/Desktop/备份/pods/CYBRich'
+end

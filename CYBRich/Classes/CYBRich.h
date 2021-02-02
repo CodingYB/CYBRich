@@ -7,6 +7,7 @@
 
 #ifndef CYBRich_h
 #define CYBRich_h
-#import "CYBRichViewController.h"
+
 #import "NSBundle+CYBRich.h"
+#import "UIImage+Rich.h"
 #endif /* CYBRich_h */
